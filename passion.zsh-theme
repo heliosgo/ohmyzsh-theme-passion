@@ -3,7 +3,7 @@
 # REF: https://apple.stackexchange.com/questions/135742/time-in-milliseconds-since-epoch-in-the-terminal
 if [[ "$OSTYPE" == "darwin"* ]]; then
     {
-        gdate
+        # gdate
     } || {
         echo "\n$fg_bold[yellow]passion.zsh-theme depends on cmd [gdate] to get current time in milliseconds$reset_color"
         echo "$fg_bold[yellow][gdate] is not installed by default in macOS$reset_color"
@@ -187,7 +187,7 @@ precmd() { # cspell:disable-line
     update_command_status $last_cmd_result;
 
     # output command execute after
-    output_command_execute_after $last_cmd_result;
+    # output_command_execute_after $last_cmd_result;
 }
 
 
